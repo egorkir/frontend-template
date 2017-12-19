@@ -6,5 +6,7 @@
 /psd/
 /dist/
 /yarn-error.log
+
+# Editors folder
 /.idea/
 /.vscode/
