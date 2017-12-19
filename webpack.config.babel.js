@@ -31,7 +31,11 @@ let options = {
 };
 
 options.plugins = [
-
+    new webpack.ProvidePlugin({
+        $: 'jquery',
+        jQuery: 'jquery',
+        'window.jQuery': 'jquery'
+    })
 ];
 
 if (isDevelopment) {
