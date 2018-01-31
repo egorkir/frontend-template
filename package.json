@@ -69,7 +69,8 @@
     "node-notifier": "^5.1.2",
     "posthtml-attrs-sorter": "^1.1.0",
     "webpack": "^3.10.0",
-    "webpack-stream": "^4.0.0"
+    "webpack-stream": "^4.0.0",
+    "jstransformer-ejs": "^0.2.0"
   },
   "extends": ".pug-lintrc"
 }
