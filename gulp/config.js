@@ -19,7 +19,7 @@ export const path = {
 export const browserSyncConfig = {
     server: './web',
     notify: false,
-    open: 'local',
+    open: false,
     host: 'localhost',
     port: 9000
 };
