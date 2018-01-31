@@ -1,7 +1,7 @@
 import path from 'path';
 import webpack from 'webpack';
 
-import {isDevelopment} from './gulp/utils/env';
+import {NODE_ENV, isDevelopment} from './gulp/utils/env';
 
 const outputFileName = '[name]-bundle.js';
 
@@ -21,16 +21,23 @@ let options = {
     devtool: !isDevelopment ? 'source-map' : 'inline-cheap-module-source-map',
 
     module: {
-        loaders: [
+        rules: [
             {
                 test: /\.js$/,
-                loader: 'babel-loader'
+                loaders: ['babel-loader']
             }
         ]
     }
 };
 
 options.plugins = [
+    new webpack.NoErrorsPlugin(),
+
+    new webpack.DefinePlugin({
+        NODE_ENV: JSON.stringify(NODE_ENV),
+        'process.env.NODE_ENV': JSON.stringify(NODE_ENV)
+    }),
+
     new webpack.ProvidePlugin({
         $: 'jquery',
         jQuery: 'jquery',
