@@ -6,6 +6,7 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
 
         block favicon
+            link(rel="icon" href="favicon.ico" sizes="48x48" type="image/vnd.microsoft.icon")
 
         block title
             - var title = 'Start page'
@@ -16,6 +17,7 @@ html(lang="en")
             link(rel="stylesheet" href="css/style.css")
 
         block js
+            link(src="js/common-webpack.bundle.js")
     body
         main
             block sections
