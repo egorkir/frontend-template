@@ -3,7 +3,7 @@ import webpack from 'webpack';
 
 import {isDevelopment} from './gulp/utils/env';
 
-const outputFileName = '[name]-webpack.bundle.js';
+const outputFileName = '[name]-bundle.js';
 
 let options = {
     context: path.resolve(__dirname + '/source/static/scripts'),
