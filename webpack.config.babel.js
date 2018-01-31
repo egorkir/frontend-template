@@ -18,7 +18,7 @@ let options = {
         library: '[name]'
     },
 
-    devtool: !isDevelopment ? 'source-map' : 'none',
+    devtool: !isDevelopment ? 'source-map' : 'inline-cheap-module-source-map',
 
     module: {
         loaders: [
