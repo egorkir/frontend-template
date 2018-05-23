@@ -7,7 +7,7 @@ import {
 } from '../config';
 
 const modules = () => {
-    let watcher = gulp.watch(['source/modules/*', '!source/modules/_*']);
+    let watcher = gulp.watch(['source/components/*', '!source/components/_*']);
 
     return watcher.on('addDir', function (path) {
         let pathArray = path.split('\\');
