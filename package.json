@@ -30,7 +30,7 @@
         "build": "cross-env NODE_ENV=production yarn run gulp build"
     },
     "engines": {
-        "node": ">=6.0.0",
+        "node": ">=7.0.0",
         "npm": "~5.6.0",
         "yarn": "^1.3.2"
     },
