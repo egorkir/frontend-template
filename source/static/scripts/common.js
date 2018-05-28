@@ -9,3 +9,9 @@ export {
     debounce as debounce,
     responsiveIframe as responsiveIframe
 };
+
+// ====================================
+// --------- Components ---------------
+// ====================================
+
+import '../../components/test/test';
