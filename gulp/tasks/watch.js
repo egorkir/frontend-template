@@ -23,7 +23,7 @@ const watch = () => {
 
     // Static style
     gulp.watch(
-        'source/static/styles/*.scss',
+        'source/static/styles/**/*.scss',
         gulp.series(css)
     );
 
