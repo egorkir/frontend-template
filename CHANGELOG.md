@@ -23,11 +23,18 @@ The format is based on [Keep a Changelog][changelogDoc]
 - add `gulpfile.babel.js`
 - add babel and webpack packages
 - add `libs` folder for vendor source
+- add jquery lib in dependencies
 
 ### Removed
 
 - removed `gulpfile.js`
 - removed `bower.json`
+- removed HTML5 Shim and Respond
+- removed `map.js`
+
+### Fixed
+
+- fixed old path
 
 ## [1.6.2] - 2018-04-05
 
