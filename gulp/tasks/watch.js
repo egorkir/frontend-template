@@ -17,7 +17,7 @@ const watch = () => {
 
     // Modules
     gulp.watch(
-        'source/modules/**/*.pug',
+        'source/components/**/*.pug',
         gulp.series(html, reload)
     );
 
@@ -29,13 +29,19 @@ const watch = () => {
 
     // Modules style
     gulp.watch(
-        'source/modules/**/*.scss',
+        'source/components/**/*.scss',
         gulp.series(css)
     );
 
     // Static js
     gulp.watch(
         'source/static/scripts/**/*.js',
+        gulp.series(scripts, reload)
+    );
+
+    // Modules js
+    gulp.watch(
+        'source/components/**/*.js',
         gulp.series(scripts, reload)
     );
 
