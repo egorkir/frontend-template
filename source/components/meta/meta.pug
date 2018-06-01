@@ -32,9 +32,10 @@ mixin meta(title, desc, css, js, fonts, favicon)
 
     // Sass generated style
     link(rel="stylesheet" href="css/extended.min.css")
-    link(rel="stylesheet" href="css/style.min.css")
+    link(rel="stylesheet" href="css/style.css")
 
     // ADD SCRIPTS
+    script(src="js/jquery-bundle.js")
     each val in js
         script(src=val)
 

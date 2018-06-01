@@ -6,14 +6,14 @@ const isDevelopment = NODE_ENV === "development";
 
 const outputFileName = '[name]-bundle.js';
 
+const jqueryEntry = { 'jquery': ['jquery']};
+const commonEntry = { 'common': ['./source/static/scripts/common.js']}
+const entries = Object.assign(jqueryEntry, commonEntry);
+
 let options = {
     mode: NODE_ENV,
 
-    context: path.resolve(__dirname + '/source/static/scripts'),
-
-    entry: {
-        common: './common.js',
-    },
+    entry: entries,
 
     output: {
         filename: outputFileName,
@@ -21,7 +21,7 @@ let options = {
         library: '[name]'
     },
 
-    devtool: !isDevelopment ? 'source-map' : 'inline-cheap-module-source-map',
+    devtool: !isDevelopment ? 'source-map' : '',
 
     module: {
         rules: [

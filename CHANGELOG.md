@@ -24,6 +24,7 @@ The format is based on [Keep a Changelog][changelogDoc]
 - add babel and webpack packages
 - add `libs` folder for vendor source
 - add jquery lib in dependencies
+- add slick-slider lib in dependencies
 
 ### Removed
 
